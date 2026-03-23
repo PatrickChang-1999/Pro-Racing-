@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Pro Racing</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner container">
+        <nav aria-label="Primary" class="main-nav">
+          <ul class="nav-group nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+          </ul>
+
+          <a href="index.html" class="logo-link" aria-label="Pro Racing home">
+            <img src="assets/logo.svg" alt="Pro Racing logo" class="site-logo" />
+          </a>
+
+          <ul class="nav-group nav-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Contact</p>
+            <h1>We are here to support your automotive needs</h1>
+            <p class="lead">Questions about products, bulk orders, or support? Reach out to our team.</p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="panel">
+              <h2>Send a message</h2>
+              <form class="contact-form" action="#" method="post">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" placeholder="How can we help?" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+              </form>
+            </article>
+
+            <aside class="panel contact-details">
+              <h2>Company details</h2>
+              <ul>
+                <li><strong>Email:</strong> support@proracingauto.com</li>
+                <li><strong>Phone:</strong> +1 (800) 555-0148</li>
+                <li><strong>Hours:</strong> Mon–Fri, 9:00 AM–6:00 PM</li>
+                <li><strong>Address:</strong> 825 Industrial Drive, Irvine, CA 92618</li>
+              </ul>
+              <p>
+                For product warranty requests, please include your product name and purchase reference in your message.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 Pro Racing. Practical automotive accessories.</p>
+        <a href="about.html" class="text-link">Learn about our mission</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

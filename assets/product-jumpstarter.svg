@@ -1,0 +1,16 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1'>
+      <stop offset='0' stop-color='#1a1a1c'/>
+      <stop offset='1' stop-color='#2f3034'/>
+    </linearGradient>
+  </defs>
+  <rect width='640' height='420' fill='#f3f4f6'/>
+  <rect x='58' y='70' width='524' height='280' rx='18' fill='url(#g)'/>
+  <rect x='86' y='102' width='220' height='16' rx='8' fill='#b21f24' opacity='0.85'/>
+  <rect x='86' y='142' width='468' height='8' rx='4' fill='#d7d9dd' opacity='0.65'/>
+  <rect x='86' y='168' width='420' height='8' rx='4' fill='#d7d9dd' opacity='0.5'/>
+  <circle cx='514' cy='274' r='36' fill='#0f1012'/>
+  <text x='86' y='228' font-family='Segoe UI, Arial, sans-serif' font-size='34' font-weight='700' fill='#f8f8f9'>PRO RACING</text>
+  <text x='86' y='268' font-family='Segoe UI, Arial, sans-serif' font-size='20' fill='#e2e4e8'>JUMPSTARTER</text>
+</svg>
