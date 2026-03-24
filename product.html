@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Pro Racing</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner container">
+        <nav aria-label="Primary" class="main-nav">
+          <ul class="nav-group nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html" class="active">Product</a></li>
+          </ul>
+
+          <a href="index.html" class="logo-link" aria-label="Pro Racing home">
+            <img src="assets/Pro Racing X -logo.jpg" alt="Pro Racing logo" class="site-logo" />
+          </a>
+
+          <ul class="nav-group nav-right">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <p class="nav-clock" id="current-time" aria-live="polite">Local Time --:--:--</p>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Product Catalog</p>
+            <h1>Automotive essentials built for everyday confidence</h1>
+            <p class="lead">
+              Browse emergency tools, lighting solutions, maintenance items, and practical accessories.
+              Product cards are generated from a structured JavaScript dataset for fast expansion.
+            </p>
+          </div>
+
+          <div class="filter-row" id="category-filters"></div>
+          <div class="product-grid" id="product-list" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 Pro Racing. Practical automotive accessories.</p>
+        <a href="contact.html" class="text-link">Need product support?</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
