@@ -322,6 +322,19 @@ p {
   color: var(--accent);
 }
 
+.btn-section-link {
+  border-color: #c9ccd2;
+  background: transparent;
+  color: #43464d;
+  min-width: 188px;
+}
+
+.btn-section-link:hover {
+  border-color: #9ca1ab;
+  background: #f9fafb;
+  color: #1f232a;
+}
+
 .section-head {
   margin-bottom: 1.6rem;
 }
