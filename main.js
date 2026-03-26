@@ -90,7 +90,7 @@ const coreProductLines = [
     description: 'Durable, premium lighting designed for consumers, garage use, and everyday utility.',
     image: 'assets/product-worklight.svg',
     detailPage: 'product.html?line=work-lights',
-    ctaLabel: 'View Range',
+    ctaLabel: 'Explore Line',
   },
   {
     id: 'line-wiper-blades',
@@ -100,7 +100,7 @@ const coreProductLines = [
       'Premium blade solutions built for dependable performance, clean visibility, and everyday driving confidence.',
     image: 'assets/product-wiper.svg',
     detailPage: 'product.html?line=wiper-blades',
-    ctaLabel: 'Browse Category',
+    ctaLabel: 'Explore Line',
   },
   {
     id: 'line-premium-car-mats',
@@ -109,7 +109,7 @@ const coreProductLines = [
     description: 'OEM-style premium car mats designed for refined fitment in vehicles such as Mercedes-Benz and Porsche.',
     image: 'assets/product-carmats.svg',
     detailPage: 'product.html?line=premium-car-mats',
-    ctaLabel: 'View Range',
+    ctaLabel: 'Explore Line',
   },
 ];
 
