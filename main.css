@@ -362,6 +362,7 @@ p {
 
 .featured-products-section .product-grid {
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .featured-products-section .product-card {
@@ -387,6 +388,7 @@ p {
   margin: 0;
   color: #5b6068;
   font-size: 0.94rem;
+  min-height: 3.2em;
 }
 
 .featured-products-section .product-content .btn-secondary {
@@ -395,6 +397,7 @@ p {
   background: var(--black);
   border-color: var(--black);
   color: #fff;
+  justify-content: center;
 }
 
 .featured-products-section .product-content .btn-secondary:hover {
