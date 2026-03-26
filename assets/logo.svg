@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 88" role="img" aria-labelledby="title desc">
+  <title id="title">Pro Racing Logo</title>
+  <desc id="desc">Wordmark with restrained red accent.</desc>
+  <rect width="240" height="88" rx="16" fill="#101114"/>
+  <text x="28" y="57" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#f5f6f7">PRO</text>
+  <text x="112" y="57" font-size="34" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="#f5f6f7">R</text>
+  <path d="M139 31 L152 57 L165 31" fill="none" stroke="#b21f24" stroke-width="6" stroke-linecap="round"/>
+  <text x="171" y="57" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="600" fill="#cfd1d5">ACING</text>
+</svg>

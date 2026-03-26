@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Pro Racing</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner container">
+        <nav aria-label="Primary" class="main-nav">
+          <strong class="brand-name">Pro Racing Industry Inc</strong>
+          <ul class="nav-group nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html" class="active">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-clock" id="current-time" aria-live="polite">
+            <span class="clock-label">Local Time</span>
+            <span class="clock-value">--:--:--</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Product Catalog</p>
+            <h1>Automotive essentials built for everyday confidence</h1>
+            <p class="lead">
+              Browse emergency tools, lighting solutions, maintenance items, and practical accessories.
+              Product cards are generated from a structured JavaScript dataset for fast expansion.
+            </p>
+          </div>
+
+          <div class="filter-row" id="category-filters"></div>
+          <div class="product-grid" id="product-list" aria-live="polite"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 Pro Racing. Practical automotive accessories.</p>
+        <a href="contact.html" class="text-link">Need product support?</a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
