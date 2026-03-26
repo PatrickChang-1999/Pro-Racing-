@@ -101,6 +101,22 @@ function renderFeaturedProducts() {
   renderProducts('featured-products', featured);
 }
 
+function enableFeaturedCardClicks() {
+  const wrap = document.getElementById('featured-products');
+  if (!wrap) return;
+
+  wrap.addEventListener('click', (event) => {
+    const button = event.target.closest('a.btn');
+    if (button) return;
+
+    const card = event.target.closest('.product-card');
+    if (!card) return;
+
+    const target = card.querySelector('a.btn');
+    if (target) target.click();
+  });
+}
+
 function renderCategoryFilters() {
   const filterWrap = document.getElementById('category-filters');
   const listWrap = document.getElementById('product-list');
@@ -151,3 +167,4 @@ function updateNavClock() {
 renderFeaturedProducts();
 renderCategoryFilters();
 updateNavClock();
+enableFeaturedCardClicks();
