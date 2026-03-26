@@ -226,6 +226,11 @@ a {
   max-width: 18ch;
 }
 
+.heading-brand-line {
+  display: block;
+  margin-top: 0.1rem;
+}
+
 .credibility-copy p {
   max-width: 60ch;
 }
