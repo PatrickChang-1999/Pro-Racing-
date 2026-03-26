@@ -73,6 +73,46 @@ const products = [
   },
 ];
 
+const coreProductLines = [
+  {
+    id: 'line-jump-starters',
+    title: 'Jump Starters',
+    category: 'Core Line',
+    description: 'Portable power solutions for emergency starts and dependable roadside support.',
+    image: 'assets/product-jumpstarter.svg',
+    detailPage: 'product.html?line=jump-starters',
+    ctaLabel: 'Explore Line',
+  },
+  {
+    id: 'line-work-lights',
+    title: 'Work Lights',
+    category: 'Core Line',
+    description: 'Durable, premium lighting designed for consumers, garage use, and everyday utility.',
+    image: 'assets/product-worklight.svg',
+    detailPage: 'product.html?line=work-lights',
+    ctaLabel: 'View Range',
+  },
+  {
+    id: 'line-wiper-blades',
+    title: 'Wiper Blades',
+    category: 'Core Line',
+    description:
+      'Premium blade solutions built for dependable performance, clean visibility, and everyday driving confidence.',
+    image: 'assets/product-wiper.svg',
+    detailPage: 'product.html?line=wiper-blades',
+    ctaLabel: 'Browse Category',
+  },
+  {
+    id: 'line-premium-car-mats',
+    title: 'Premium Car Mats',
+    category: 'Core Line',
+    description: 'OEM-style premium car mats designed for refined fitment in vehicles such as Mercedes-Benz and Porsche.',
+    image: 'assets/product-carmats.svg',
+    detailPage: 'product.html?line=premium-car-mats',
+    ctaLabel: 'View Range',
+  },
+];
+
 const categories = ['All', ...new Set(products.map((item) => item.category))];
 
 function productCardTemplate(product) {
@@ -83,7 +123,7 @@ function productCardTemplate(product) {
         <span class="badge">${product.category}</span>
         <h3>${product.title}</h3>
         <p>${product.description}</p>
-        <a class="btn btn-secondary" href="${product.detailPage}" aria-label="View details for ${product.title}">View Product</a>
+        <a class="btn btn-secondary" href="${product.detailPage}" aria-label="View details for ${product.title}">${product.ctaLabel || 'View Product'}</a>
       </div>
     </article>
   `;
@@ -97,8 +137,7 @@ function renderProducts(targetId, list) {
 }
 
 function renderFeaturedProducts() {
-  const featured = products.filter((product) => product.featured).slice(0, 4);
-  renderProducts('featured-products', featured);
+  renderProducts('featured-products', coreProductLines);
 }
 
 function enableFeaturedCardClicks() {
