@@ -131,16 +131,17 @@ function renderCategoryFilters() {
 function updateNavClock() {
   const clockElement = document.getElementById('current-time');
   if (!clockElement) return;
+  const clockValue = clockElement.querySelector('.clock-value');
+  if (!clockValue) return;
 
   const formatter = new Intl.DateTimeFormat(undefined, {
-    weekday: 'short',
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
   });
 
   const paint = () => {
-    clockElement.textContent = `Local Time ${formatter.format(new Date())}`;
+    clockValue.textContent = formatter.format(new Date());
   };
 
   paint();

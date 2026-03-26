@@ -73,14 +73,15 @@ a {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .brand-name {
   color: #ffffff;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.02em;
+  font-weight: 800;
+  font-size: 1.02rem;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
   white-space: nowrap;
 }
 
@@ -98,8 +99,10 @@ a {
 
 .nav-group a {
   color: #e8e8ea;
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
+  font-size: 0.92rem;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  font-weight: 600;
   position: relative;
   transition: color 280ms ease;
 }
@@ -129,10 +132,31 @@ a {
 
 .nav-clock {
   margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.34rem 0.7rem 0.36rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
   justify-self: end;
-  color: #d2d4d8;
+}
+
+.clock-label {
+  color: #b9bec8;
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.clock-value {
+  color: #ffffff;
   font-size: 0.82rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.025em;
+  font-weight: 700;
+  font-feature-settings: "tnum" 1;
   font-variant-numeric: tabular-nums;
 }
 
@@ -437,6 +461,16 @@ textarea:focus {
 
   .nav-clock {
     justify-self: center;
+    padding-inline: 0.62rem;
+    gap: 0.48rem;
+  }
+
+  .clock-label {
+    font-size: 0.62rem;
+  }
+
+  .clock-value {
+    font-size: 0.78rem;
   }
 
   .product-grid,
