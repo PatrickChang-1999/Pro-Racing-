@@ -137,7 +137,11 @@ function renderProducts(targetId, list) {
 }
 
 function renderFeaturedProducts() {
-  renderProducts('featured-products', coreProductLines);
+  const normalizedCoreLines = coreProductLines.map((line) => ({
+    ...line,
+    ctaLabel: 'Explore Line',
+  }));
+  renderProducts('featured-products', normalizedCoreLines);
 }
 
 function enableFeaturedCardClicks() {
